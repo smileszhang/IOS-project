@@ -1,0 +1,35 @@
+Assignment 5
+Create an iOS application using the Bluetooth template and the BlueTooth module that:
+•	Reads and displays data from two or more sensors/hardware attached to the arduino
+o	one sensor/input must use analog voltage (e.g., as simple as a potentiometer)
+o	the other inputs(s) can be analog, digital, or binary output (e.g., as simple as a button)
+o	the display of the sensor data should be more than just a text label
+o	use proper sampling rates to display the sensor output
+o	use proper dynamic range and voltage references
+o	Create a protocol for encoding and interpretting the data on the iPhone
+•	Sends two or more control commands to the microcontroller that change the behavior of the arduino (i.e., the arduino interpretes the commands and changes something)
+o	make the controls change something noticeable in the operation of the Arduino
+o	the output must make use of a PWM signal (implemented in hardware)
+•	The Arduino sketch should also: 
+o	use one or more interrupts 
+•	for example, use a button as input
+•	the interrupt must change something noticeable in the operation of the Arduino
+•	use proper debouncing
+o	use digital outputs (GPIO)
+•	for example to control LED(s), pin 13 is already setup for this
+o	use PWM (in hardware, look at which GPIO pins can do this)
+o	use the ADC (for the analog input part)
+•	An idea for exceptional credit (required for 7000 level students): display ADC sensor data on a real time graph somewhere in the application 
+Use the tips from lecture for proper interfacing of sensors, buttons, timers, PWM, and interrupts. Verify the functionality of the application to the instructor during lab time or office hours (or scheduled via email). 
+
+Turn in the source code for your app and Arduino sketch in zipped format or GitHub link. Use proper coding techniques and naming conventions for objective C. Include your team member names and team name in the comments of the "main.m" file as well as in upload text. Upload as "teamNameAssignmentFive.zip". For this assignment, it is extremely important to show the application to me or archive it in video as I will not be able to test your hardware designs.
+
+
+Grading Rubric
+•	[5 points] Proper Interface Design 
+•	[30 points] Peripherals Selected Properly, Effective Protocol Created
+•	[10 points] Proper display of sensor data in a way that makes sense for the data collected
+•	[35 points] Proper Use of Hardware (ADC, Interput, PWM, GPIO, etc.)
+•	[10 points] Proper control commands sent and used by arduino
+•	[10 points] Exceptional (free reign to make updates, perhaps on the interface or types of sensors)
+
